@@ -60,7 +60,9 @@ Special IPs:
                     → Abnormal if sent repeatedly or from an unexpected device.
 
 If you see a non-private IP in a SIEM alert as the source, an external party is involved.
-The NAT Concept (Why You Have Both)
+
+The NAT Concept (Why You Have Both).
+
 Your home router has one public IP (assigned by your ISP). But your home might have 10 devices — phone, laptop, TV, tablet, etc. Each device gets a private IP. When any of your devices accesses the internet, the router performs NAT (Network Address Translation) — it replaces the private IP with the router's public IP before sending the packet out. When the response comes back, the router knows which internal device to send it to.
 This is why all 10 devices in your home can access the internet using just one public IP address.
 SOC Relevance: When investigating an outbound alert (internal device connecting to external server), the source IP will be a private IP (internal device). When investigating an inbound alert (external attacker connecting to your server), the source IP will be a public IP (the attacker). This immediately tells you the direction and nature of the threat.
