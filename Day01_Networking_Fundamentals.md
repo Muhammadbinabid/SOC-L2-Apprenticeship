@@ -30,21 +30,21 @@
 | 2 | Data Link | Ethernet, Wi-Fi (802.11), ARP (Address Resolution Protocol).| ARP poisoning attacks, MAC spoofing, and rogue device detection all happen at this layer. Switches maintain a MAC address table — if you see an unknown MAC address appearing on a port, that's a Layer 2 security event.|
 | 1 | Physical | Ethernet (IEEE 802.3), Wi-Fi (IEEE 802.11), Bluetooth| A rogue device physically plugged into your network is a Layer 1 concern. Someone tapping a physical cable is a Layer 1 attack. Electromagnetic interference causing network outages can be a physical layer issue or a deliberate attack.|
 
-┌─────┬─────────────────┬────────────────────────────────────────────────┐
-│  7  │   APPLICATION   │ User-facing protocols                          │
-├─────┼─────────────────┼────────────────────────────────────────────────┤
+
+|  7  │   APPLICATION   │ User-facing protocols                          │
+
 │  6  │  PRESENTATION   │ Data formatting, encryption, compression       │
-├─────┼─────────────────┼────────────────────────────────────────────────┤
+
 │  5  │    SESSION      │ Managing communication sessions                │
-├─────┼─────────────────┼────────────────────────────────────────────────┤
+
 │  4  │   TRANSPORT     │ TCP/UDP, Port numbers, reliability             │
-├─────┼─────────────────┼────────────────────────────────────────────────┤
+
 │  3  │    NETWORK      │ IP addresses, routing                          │
-├─────┼─────────────────┼────────────────────────────────────────────────┤
+
 │  2  │   DATA LINK     │ MAC addresses, switches, ARP                   │
-├─────┼─────────────────┼────────────────────────────────────────────────┤
+
 │  1  │    PHYSICAL     │ Cables, Wi-Fi signals, bits                    │
-└─────┴─────────────────┴────────────────────────────────────────────────┘
+
 
 ### IP Addresses
 Private ranges I must memorise:
